@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 20px;
+  text-rendering: geometricPrecision;
+}
+
+.container {
+ width: 100%;
+ height: 100vh; 
+}
+
+.info-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.marker {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background: url('../img/marker.png') center bottom;
+  background-size: contain;
+
+} 
+
+.info {
+  height: 70vh;
+  /* todo width */
+  width: 400px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  margin: 20px;
+  padding: 15px 20px;
+}
+
+.launchpad-name {
+  font-weight: 400;
+  font-size: 140%;
+  max-width: 93%;
+}
+
+.launchpad-status {
+  font-weight: 400;
+  font-size: 85%;
+  color: green;
+}
+
+.header {
+  font-weight: 300;
+  font-size: 110%;
+  margin-top: 35px;
+}
+
+.subheader {
+  font-weight: 300;
+  font-size: 90%;
+  margin: 10px 0 10px 25px;
+}
+
+.close-icon {
+  position: absolute;
+  right: 20px;
+}
